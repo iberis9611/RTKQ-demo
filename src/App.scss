@@ -1,0 +1,120 @@
+.Header {
+    background: black;
+    // color: white;
+    display: flex;
+    padding: 10px;
+    
+    nav {
+        position: absolute;
+        right: 0;
+        li {
+            display: inline;
+            margin:10px;
+    
+            a {
+                color: white;
+                font-size: 24px;
+                text-decoration: none; // Removing underline for anchors tag
+            }
+
+            a:hover {
+                color: rgba(231, 194, 9, 0.762);
+                font-size: 30px;
+                font-weight: bold;
+                transition: all 0.4s;
+            }
+        }
+    }
+}
+
+.App {
+
+    section {
+        padding: 20px 30px 0;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+        h2 {
+            text-align: center;
+        }
+
+        article:hover {
+            width: 450px;
+            border: 3px solid  rgba(231, 194, 9, 0.762);
+            color: rgb(248, 208, 10);
+            transition: all 0.4s;
+            
+            a {
+                text-decoration: none;
+            }
+        }
+        
+        form {
+            width: 400px;
+            margin: 0 auto;
+
+            input, button, textarea, select {
+                display: block;
+                width: 422px;
+                height: 40px;
+                padding: 0;
+                font-size: 20px;
+                margin-bottom: 20px;
+                background: rgba(114, 114, 114, 0.868);
+                color: white;
+                border: 1px solid rgba(245, 245, 245, 0.171);
+            }
+    
+            textarea {
+                height: 200px;
+            }
+    
+            label {
+                font-size: 20px;
+            }
+    
+            .deleteButton {
+                background: rgba(231, 194, 9, 0.258);
+                border-color: rgba(245, 245, 245, 0.171);
+            }
+        }
+    
+        ul, ol {
+            padding: 10px;
+            text-align: center;
+            list-style: none; // remove the dot before every list item
+
+            li {
+                margin-bottom: 10px;
+
+                a {
+                    color: white;
+                    text-decoration: none; 
+                }
+            }
+        }
+    }
+    
+    article {
+        border: 1px solid white;
+        border-radius: 15px;
+        margin: 10px auto; // centering an aritlce 
+        padding: 10px;
+        width: 400px;
+    
+        .reactionButton {
+            background: none;
+            border: none;
+        }
+    
+        a, button {
+            color: white;
+        }
+    }
+
+    a:hover, button:hover {
+        font-size: 20px;
+        font-weight: bold;
+        transition: all 0.4s;
+        text-decoration: none;
+    }
+}
